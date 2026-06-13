@@ -34,8 +34,8 @@ class Service {
         if(isNaN(num1)){
             throw new Error("Informar somente números")
         }
-        if(num1 <= 0) {
-            throw new Error("Coloque um número maior que zero")
+        if(num1 < 0) {
+            throw new Error("Coloque somente números positivos")
         }
         return num1 * num1;
     }
@@ -44,11 +44,8 @@ class Service {
         if(isNaN(num1) || isNaN(num2)){
             throw new Error("Informar somente números")
         }
-        if (num2 < 0) {
-            throw new Error("O expoente deve ser um número maior que zero")
-        }
         const numFinal
-        for (let i = 0; i <num2; i++) {
+        for (const i = 0; i <num2; i++) {
             numFinal *= num1;
             
         }
