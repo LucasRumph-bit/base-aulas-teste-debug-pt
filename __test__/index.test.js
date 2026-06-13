@@ -224,43 +224,43 @@ describe("Testes para função Raiz", () => {
 describe("Testes para função Potencia", () => {
 
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
     it("Deve calcular a potencia de um numero positvo, base 3, potencia 3, retorna 27", () => {
-        const resultado = Service.Subtrair(3,3);
+        const resultado = Service.Potencia(3,3);
         expect(resultado).toBe(27);
     })
 })
