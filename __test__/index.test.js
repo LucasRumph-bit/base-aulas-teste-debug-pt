@@ -5,43 +5,43 @@ describe("Testes para função Somar", () => {
 
     it("CT 1 - Chamar a função somar, e enviar como primeiro parametro 1, como segundo parametro 99, retornar 100", () => {
         const result = Service.Somar(1,99);
-        expect(result).toBe(100);
+        expect(resultado).toBe(100);
     })
     it("CT 2 - Chamar a função somar dois numeros como primeiro parametro -1, como segundo paramentro 99, retornar 98", () => {
-        const result = Service.Somar(-1,99);
-        expect(result).toBe(98);
+        const resultado = Service.Somar(-1,99);
+        expect(resultado).toBe(98);
     })
     it("CT 3 - Chamar a função somar, e enviar como primeiro parametro 1, como segundo parametro -99, retornar -98", () => {
-        const result = Service.Somar(1, -99);
-        expect(result).toBe(-98);
+        const resultado = Service.Somar(1, -99);
+        expect(resultado).toBe(-98);
     })
     it("CT 4 - Chamar a função somar, e enviar como primeiro parametro -1, como segundo parametro -99, retornar -100", () => {
-        const result = Service.Somar(-1, -99);
-        expect(result).toBe(-100);
+        const resultado = Service.Somar(-1, -99);
+        expect(resultado).toBe(-100);
     })
     it("CT 5 - Chamar a função somar, e enviar como primeiro parametro 1.5, como segundo parametro 2.3, retornar 3.8", () => {
-        const result = Service.Somar(1.5,2.3);
-        expect(result).toBe(3.8);
+        const resultado = Service.Somar(1.5,2.3);
+        expect(resultado).toBe(3.8);
     })
     it("CT 6 - Chamar a função somar, e enviar como primeiro parametro 'batata', como segundo parametro 1, retornar um erro", () => {
-        const result = () => Service.Somar("batata",1);
-        expect(result).toThrow("Informar somente números");
+        const resultado = () => Service.Somar("batata",1);
+        expect(resultado).toThrow("Informar somente números");
     })
     it("CT 7 - Chamar a função somar, e enviar como primeiro parametro 1, como segundo parametro 'batata', retornar um erro ", () => {
-        const result = () => Service.Somar(1,"batata");
-        expect(result).toThrow("Informar somente números");
+        const resultado = () => Service.Somar(1,"batata");
+        expect(resultado).toThrow("Informar somente números");
     })
     it("CT 8 - Chamar a função somar, e enviar como primeiro parametro 0, como segundo parametro 1, retornar 1", () => {
-        const result = Service.Somar(0, 1);
-        expect(result).toBe(1);
+        const resultado = Service.Somar(0, 1);
+        expect(resultado).toBe(1);
     })
     it("CT 9 - Chamar a função somar, e enviar como primeiro parametro 1, como segundo parametro 0, retornar 1", () => {
-        const result = Service.Somar(1,0);
-        expect(result).toBe(1);
+        const resultado = Service.Somar(1,0);
+        expect(resultado).toBe(1);
     })
     it("CT 10 - Chamar a função somar, e enviar como primeiro parâmetro -5.5, como segundo parâmetro 2.5, retornar -3", () => {
-        const result = Service.Somar(-5.5,2.5);
-        expect(result).toBe(-3);
+        const resultado = Service.Somar(-5.5,2.5);
+        expect(resultado).toBe(-3);
     })
 })
 
