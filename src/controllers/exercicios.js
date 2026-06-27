@@ -30,7 +30,7 @@ class Controller {
         const { num1, num2 } = req.body
         const resultado = Service.Multiplicar(num1, num2)
         
-        res.status(200).send({ resultados })
+        res.status(200).send({ resultado })
         } catch (e) {
             console.log(e)
             res.status(500).send ({ err: e.message})

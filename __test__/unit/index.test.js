@@ -1,10 +1,10 @@
 import { describe, it, expect } from '@jest/globals';
-import  Service  from '../src/services/exercicios.js';
+import  Service  from '../../src/services/exercicios.js';
 
 describe("Testes para função Somar", () => {
 
     it("CT 1 - Chamar a função somar, e enviar como primeiro parametro 1, como segundo parametro 99, retornar 100", () => {
-        const result = Service.Somar(1,99);
+        const resultado = Service.Somar(1,99);
         expect(resultado).toBe(100);
     })
     it("CT 2 - Chamar a função somar dois numeros como primeiro parametro -1, como segundo paramentro 99, retornar 98", () => {
@@ -77,7 +77,7 @@ describe("Testes para função Subtrair", () => {
     })
     it("CT 18 - Chamar a função subtrair, e enviar como primeiro parâmetro 10, como segundo parâmetro 'abc', retornar um erro", () => {
         const resultado = () => Service.Subtrair(10,"abc");
-        expect(resultado).toBe("Informar somente números");
+        expect(resultado).toThrow("Informar somente números");
     })
     it("CT 19 - Chamar a função subtrair, e enviar como primeiro parâmetro 999999, como segundo parâmetro 999998, retornar 1", () => {
         const resultado = Service.Subtrair(999999,999998);
@@ -147,7 +147,7 @@ describe("Testes para função Divisão", () => {
         const resultado = Service.Dividir(-50,5);
         expect(resultado).toBe(-10);
     })
-    it("CT 34 - Chamar a função dividir, e enviar como primeiro parâmetro -50, como segundo parâmetro -5, retornar 10", () => {
+    it("CT 34 - Chamar a função dividir, e enviar como primeiro parâmetro -50, como segundo parâmetro -5, retornar 5", () => {
         const resultado = Service.Dividir(-50,-5);
         expect(resultado).toBe(10);
     })
@@ -204,7 +204,7 @@ describe("Testes para função Raiz", () => {
         expect(resultado).toBe(1.5);
     })
     it("CT 47 - Chamar a função raizQuadrada, e enviar como parâmetro 10000, retornar 100", () => {
-        const resultado = Service.Raiz(1000);
+        const resultado = Service.Raiz(10000);
         expect(resultado).toBe(100);
     })
     it("CT 48 - Chamar a função raizQuadrada, e enviar como parâmetro -4, retornar um erro", () => {
@@ -261,6 +261,6 @@ describe("Testes para função Potencia", () => {
     })
     it("CT 60 - Chamar a função potência, e enviar como primeiro parâmetro 2, como segundo parâmetro 'texto', retornar um erro", () => {
         const resultado = () => Service.Potencia(2,"texto");
-        expect(resultado).toBe("Informar somente números");
+        expect(resultado).toThrow("Informar somente números");
     })
 })

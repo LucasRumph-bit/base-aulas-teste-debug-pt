@@ -24,32 +24,27 @@ class Service {
         if(isNaN(num1) || isNaN(num2)){
             throw new Error("Informar somente números")
         }
-        if(num2 <= 0) {
+        if(num2 === 0) {
             throw new Error("Coloque um divisor maior que zero")
         }
         return num1 / num2;
     }
 
-    Raiz(num1) {
-        if(isNaN(num1)){
+    Raiz(num) {
+        if(isNaN(num)){
             throw new Error("Informar somente números")
         }
-        if(num1 < 0) {
+        if(num < 0) {
             throw new Error("Coloque somente números positivos")
         }
-        return num1 * num1;
+        return Math.sqrt(num);
     }
 
     Potencia(num1, num2) {
         if(isNaN(num1) || isNaN(num2)){
             throw new Error("Informar somente números")
         }
-        const numFinal
-        for (const i = 0; i <num2; i++) {
-            numFinal *= num1;
-            
-        }
-        return numFinal; 
+        return Math.pow(num1, num2)
     }
 }
 
